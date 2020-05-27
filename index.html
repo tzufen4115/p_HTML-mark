@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>html mark practice</title>
 </head>
+
 <body>
     <!-- <div>DIV</div>
     <main>MAIN</main>
@@ -21,35 +23,121 @@
     <div id="section_post">
         <header id="_header" style="background: rgb(170, 154, 143); color: white;">
             <span style="width: 30%; display:inline-block;">標題</span>
-            
             <nav id="_nav" style="width: 60%; display:inline-block; text-align: right;">
-                <a href="./page1.html">第1頁</a>
+                <a href="./page1.html" target="_top">第1頁</a>
                 <a href="./page2.html">第2頁</a>
                 <a href="./page3.html">第3頁</a>
             </nav>
         </header>
         <hr>
         <main id="_main">
+
             <article id="_article" style="width: 700px; display: inline-block;">
-                我是文章 我是文章 我是文章 我是文章 我是文章
-                我是文章 我是文章 我是文章 我是文章 我是文章
-                我是文章 我是文章 我是文章 我是文章 我是文章
-                我是文章 我是文章 我是文章 我是文章 我是文章
-                我是文章 我是文章 我是文章 我是文章 我是文章
+                <section id="title1" style="background: pink; height: 500px;">
+                    <h1>一</h1>
+                    <a href="#title2">跳到第二段</a> |
+                    <a href="#title3">跳到第三段</a>
+                    <p>
+                        我是文章 我是文章 我是文章 我是文章 我是文章
+                        我是文章 我是文章 我是文章 我是文章 我是文章
+                        我是文章 我是文章 我是文章 我是文章 我是文章
+                        我是文章 我是文章 我是文章 我是文章 我是文章
+                        我是文章 我是文章 我是文章 我是文章 我是文章
+                    </p>
+                </section>
+                <section id="title2" style="background: rgb(160, 98, 108); height: 500px;">
+                    <h1>二</h1>
+                    <p>
+                        我是文章 我是文章 我是文章 我是文章 我是文章
+                        我是文章 我是文章 我是文章 我是文章 我是文章
+                        我是文章 我是文章 我是文章 我是文章 我是文章
+                        我是文章 我是文章 我是文章 我是文章 我是文章
+                        我是文章 我是文章 我是文章 我是文章 我是文章
+                    </p>
+                </section>
+                <section id="title3" style="background: rgb(114, 69, 77); height: 500px;">
+                    <h1>三</h1>
+                    <p>
+                        我是文章 我是文章 我是文章 我是文章 我是文章
+                        我是文章 我是文章 我是文章 我是文章 我是文章
+                        我是文章 我是文章 我是文章 我是文章 我是文章
+                        我是文章 我是文章 我是文章 我是文章 我是文章
+                        我是文章 我是文章 我是文章 我是文章 我是文章
+                    </p>
+                </section>
+                <hr>
+                <!-- 表單練習 -->
+                <!-- table[border="1"]>thead>(tr>(th{$}*3))*2 -->
+                <table border="2" style=" text-align: center; width: 300px;">
+                    <thead>
+                        <tr>
+                            <th style="width: 20%;">座號</th>
+                            <th style="width: 50$;">姓名</th>
+                            <th style="width: 30%;">分數</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1號</td>
+                            <td>John</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <td>2號</td>
+                            <td>Eson</td>
+                            <td>90</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="2" style="text-align: right;">平均總分數</td>
+                            <td>60</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <hr>
             </article>
             <aside id="_aside" style="width: 300px; display: inline-block;">
                 我是廣告 我是廣告 我是廣告 我是廣告 我是廣告
                 我是廣告 我是廣告 我是廣告 我是廣告 我是廣告
+                <hr>
+                <!-- 清單 -->
+                <ul style="list-style-type: square;">
+                    <li>linl_1</li>
+                    <li>linl_2</li>
+                    <li>linl_3</li>
+                </ul>
+
+                <ol type="A">
+                    <li>linl_1</li>
+                    <li>linl_2</li>
+                    <li>linl_3</li>
+                </ol>
+
+                <!-- d1>(dt^dd)*3 -->
+                <dl>
+                    <dt>A</dt>
+                    <dd>linl_1</dd>
+                    <dt>B</dt>
+                    <dd>linl_2</dd>
+                    <dt>C</dt>
+                    <dd>linl_3</dd>
+                </dl>
+
             </aside>
         </main>
         <hr>
         <footer id="_footer" style="background: gray;">
             <span>聯絡我們</span>
-            <daddress id="_address">
+            <address id="_address">
                 台中市
             </address>
         </footer>
     </div>
-    
+
 </body>
+
 </html>
